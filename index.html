@@ -15,22 +15,30 @@
         </header>
 
         <section class="card form-section">
-            <h2 class="section-title">Captura de Datos de la Unidad [cite: 138]</h2>
+            <h2 class="section-title">Captura de Datos de la Unidad </h2>
             <form class="fleet-form">
                 <div class="input-group">
-                    <label>ID de Unidad (Económico)</label>
+                    <label>ID de Unidad</label>
                     <input type="text" placeholder="Ej: TX-405">
                 </div>
                 <div class="input-group">
-                    <label>Kilometraje Actual [cite: 98]</label>
+                    <label>Kilometraje Actual </label>
                     <input type="number" placeholder="Ej: 155000">
                 </div>
                 <div class="input-group">
-                    <label>Códigos de Falla (DTC) [cite: 107]</label>
+                    <label>Códigos de Falla (DTC) </label>
                     <input type="text" placeholder="Ej: P0300">
                 </div>
                 <div class="input-group">
-                    <label>Hábitos de Conducción [cite: 108]</label>
+                    <label>Tiempo de uso</label>
+                    <select>
+                        <option>Menor a 2 años</option>
+                        <option>Entre 2 a 5 años</option>
+                        <option>Mayor a 5 años</option>
+                    </select>
+                </div>
+                <div class="input-group">
+                    <label>Hábitos de Conducción</label>
                     <select>
                         <option>Normal / Seguro</option>
                         <option>Moderado</option>
@@ -47,13 +55,13 @@
             <article class="diag-card border-red">
                 <div class="diag-header">
                     <span>Unidad TX-405</span>
-                    <span class="badge bg-red">CRÍTICO [cite: 139]</span>
+                    <span class="badge bg-red">CRÍTICO</span>
                 </div>
                 <div class="diag-body">
                     <p><strong>Lógica:</strong> Códigos DTC graves y hábitos agresivos detectados[cite: 107, 108].</p>
                     <div class="action-box text-red">
                         <small>ACCIÓN:</small>
-                        <strong>INTERVENIR [cite: 140]</strong>
+                        <strong>PROGRAMAR ENTRADA AL TALLER EN MENOS DE 24 HORAS </strong>
                     </div>
                 </div>
             </article>
@@ -61,13 +69,13 @@
             <article class="diag-card border-yellow">
                 <div class="diag-header">
                     <span>Unidad TX-102</span>
-                    <span class="badge bg-yellow">PRECAUCIÓN [cite: 139]</span>
+                    <span class="badge bg-yellow">PRECAUCIÓN</span>
                 </div>
                 <div class="diag-body">
-                    <p><strong>Lógica:</strong> Kilometraje próximo a servicio preventivo programado[cite: 98, 99].</p>
+                    <p><strong>Lógica:</strong> Kilometraje próximo a servicio preventivo programado.</p>
                     <div class="action-box text-yellow">
                         <small>ACCIÓN:</small>
-                        <strong>REVISAR [cite: 140]</strong>
+                        <strong>REVISAR</strong>
                     </div>
                 </div>
             </article>
@@ -75,13 +83,13 @@
             <article class="diag-card border-green">
                 <div class="diag-header">
                     <span>Unidad TX-088</span>
-                    <span class="badge bg-green">ÓPTIMO [cite: 139]</span>
+                    <span class="badge bg-green">ÓPTIMO</span>
                 </div>
                 <div class="diag-body">
-                    <p><strong>Lógica:</strong> Sin alertas de telemetría; operación estable y segura[cite: 109, 110].</p>
+                    <p><strong>Lógica:</strong> Sin alertas de telemetría; operación estable y segura.</p>
                     <div class="action-box text-green">
                         <small>ACCIÓN:</small>
-                        <strong>MANTENER [cite: 140]</strong>
+                        <strong>MANTENER </strong>
                     </div>
                 </div>
             </article>
