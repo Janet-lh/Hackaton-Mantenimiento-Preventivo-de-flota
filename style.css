@@ -1,0 +1,92 @@
+/* VARIABLES DE COLOR - ¡Modifica estas para cambiar todo el look! */
+:root {
+    --azul-traxion: #003366;
+    --gris-fondo: #f4f7f6;
+    --blanco: #ffffff;
+    --rojo-alerta: #e74c3c;
+    --amarillo-alerta: #f1c40f;
+    --verde-alerta: #2ecc71;
+}
+
+body {
+    background-color: var(--gris-fondo);
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilo de las tarjetas (Cards) */
+.card {
+    background: var(--blanco);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* Títulos */
+.title { color: var(--azul-traxion); margin-bottom: 5px; }
+.subtitle { color: #666; margin-top: 0; }
+
+/* Estilo del Formulario */
+.fleet-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    gap: 15px;
+}
+
+.input-group { display: flex; flex-direction: column; }
+
+label { font-size: 0.9rem; font-weight: bold; margin-bottom: 5px; }
+
+input, select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Botón principal */
+.btn-analyze {
+    grid-column: span 2; /* Ocupa las dos columnas */
+    background-color: var(--azul-traxion);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Estilos del Semáforo y Resultados */
+.status-badge {
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 0.8rem;
+}
+
+.status-red { background-color: var(--rojo-alerta); }
+.status-yellow { background-color: var(--amarillo-alerta); }
+.status-green { background-color: var(--verde-alerta); }
+
+.logic-box {
+    background-color: #f9f9f9;
+    border-left: 4px solid var(--azul-traxion);
+    padding: 10px 15px;
+    margin: 15px 0;
+}
+
+.action-box {
+    text-align: center;
+    border: 2px dashed var(--rojo-alerta);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.action-label { margin: 0; font-size: 0.8rem; color: #666; }
+.action-value { margin: 5px 0 0 0; font-weight: bold; font-size: 1.2rem; color: var(--rojo-alerta); }

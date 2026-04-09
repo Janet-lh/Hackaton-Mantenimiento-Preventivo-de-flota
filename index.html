@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Prototipo Eje 3 - Traxión Tech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        
+        <header class="header">
+            <h1 class="title">HACKATÓN BÉCALOS TRAXIÓN</h1>
+            <p class="subtitle">Eje 3: Mantenimiento Predictivo de Flota</p>
+        </header>
+
+        <section class="card">
+            <h2 class="section-title">Registro de Unidad</h2>
+            <form class="fleet-form">
+                <div class="input-group">
+                    <label>ID de Unidad (Económico)</label>
+                    <input type="text" placeholder="Ej: TX-405">
+                </div>
+                
+                <div class="input-group">
+                    <label>Kilometraje</label>
+                    <input type="number" placeholder="Ej: 155000">
+                </div>
+
+                <div class="input-group">
+                    <label>Códigos de Falla (DTC)</label>
+                    <input type="text" placeholder="Ej: P0300, P0171">
+                </div>
+
+                <div class="input-group">
+                    <label>Nivel de Alertas de Conducción</label>
+                    <select>
+                        <option value="bajo">Bajo (Normal)</option>
+                        <option value="medio">Medio (Revisión sugerida)</option>
+                        <option value="alto">Alto (Riesgo mecánico)</option>
+                    </select>
+                </div>
+
+                <button type="button" class="btn-analyze">Analizar Riesgo</button>
+            </form>
+        </section>
+
+        <section class="card result-card">
+            <div class="result-header">
+                <h3>Diagnóstico de IA</h3>
+                <span class="status-badge status-red">Riesgo: 85% (Crítico)</span>
+            </div>
+
+            <div class="logic-box">
+                <strong>Lógica del Modelo:</strong>
+                <p>Se detectaron códigos de falla activos y hábitos de conducción agresivos que aceleran el desgaste del activo[cite: 108, 111].</p>
+            </div>
+
+            <div class="action-box">
+                <p class="action-label">ACCIÓN SUGERIDA:</p>
+                <p class="action-value">INTERVENIR INMEDIATAMENTE</p>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>
